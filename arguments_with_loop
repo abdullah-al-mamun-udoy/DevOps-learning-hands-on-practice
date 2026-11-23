@@ -1,0 +1,11 @@
+
+#!/bin/bash
+
+echo "total numbers of argument: $#"
+echo "all arguments:"
+
+count=1
+for arg in "$@"; do
+    echo "argument $count: $arg"
+    count=$((count+1))
+done
